@@ -5,4 +5,4 @@ A set of scripts for semi-automatic conversion of pdf files to editable file for
 
 - Extracting text and shapes along with easily accessible formatting information (font type, bold/italic, size, fill and outline color)
 - Approximate rules for recognizing sub- and superscripts, underlines, strikethroughs, highlights, borders
-- Capable of aggregating neighboring elements into a single one (e.g. outputting a single image composed of smaller images next to each other)
+- Capable of aggregating neighboring elements into a single one (e.g. outputting a single image composed of smaller images placed next to each other)
