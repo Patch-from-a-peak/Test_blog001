@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A test website for playing with the layout and maintenance
   of a personal blog.
 baseurl: / # the subpath of your site, e.g. /blog
-url: https://Patch-from-a-peak.github.io #e.g. http://example.com
+url: https://patch-from-a-peak.github.io #e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
