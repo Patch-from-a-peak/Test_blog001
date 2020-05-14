@@ -4,4 +4,4 @@
 
 layout: home
 ---
-<img src="{{ site.baseurl }}/assets/rob_logo.jpg">
+<img src="{{ site.baseurl }}/assets/blog_logo.jpg">
