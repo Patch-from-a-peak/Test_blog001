@@ -5,9 +5,12 @@ date:   2020-05-11 13:50:25 +0200
 categories: jekyll update
 ---
 
+---
 **Note:**
 This is an **outdated version** of the blog, made for testing purposes.
 For the recent content, visit [https://patch-from-a-peak.github.io/modern_translation_blog](https://patch-from-a-peak.github.io/modern_translation_blog/)
+
+---
 
 **Warning:** Blog post under construction, still need to add content.
 

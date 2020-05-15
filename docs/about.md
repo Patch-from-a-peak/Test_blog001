@@ -4,11 +4,12 @@ title: About
 permalink: /about/
 ---
 
-```
+---
 **Note:**
-This is an outdated version of the blog, made for testing purposes.
-For the recent content, visit https://patch-from-a-peak.github.io/modern_translation_blog/
-```
+This is an **outdated version** of the blog, made for testing purposes.
+For the recent content, visit [https://patch-from-a-peak.github.io/modern_translation_blog](https://patch-from-a-peak.github.io/modern_translation_blog/)
+
+---
 
 Welcome to the Modern Translation blog by R!
 
