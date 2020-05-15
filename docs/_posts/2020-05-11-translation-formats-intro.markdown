@@ -5,6 +5,12 @@ date:   2020-05-11 13:50:25 +0200
 categories: jekyll update
 ---
 
+```
+**Note:**
+This is an outdated version of the blog, made for testing purposes.
+For the recent content, visit https://patch-from-a-peak.github.io/modern_translation_blog/
+```
+
 *This is a series of blog posts on file formats used by CAT (Computer-assisted translation) programs for storing translation data. Their aim is to share some knowledge which should allow us to tame our CAT tools better. Or to become independent from their whims.*
 
 *This post discusses some basic facts related to XML and archive files. If you want to jump straight to editing them without a CAT tool, see [Part 2]({{ site.baseurl }}{% link _posts/2020-05-14-translation-formats-practice.markdown %}).*
@@ -83,9 +89,9 @@ Some XML basics:
 
   In our case, it's the `<skeleton (...) />` tag from line 5. It could have also been written as `<skeleton (...)></skeleton>`.
 
-* Space between elements does not matter that much. The example was indented (*prettified*) for clarity, but the tags could have been put in one line, one right after the other.
+* Space between elements does not matter that much. The example was indented (*prettified*) for clarity, but the tags could have also been put in one line, one right after the other.
 
-What is most interesting to us, as translators, are the `source` and `target` tags. They are common in different translation formats. The first kind surrounds the original text, and the second one surrounds our translation.
+What is most interesting to us, as translators, are the `source` and `target` elements. They occur in different translation formats. The first type contains the original text, and the second one contains our translation.
 
 &nbsp; 
 &nbsp; 
@@ -96,18 +102,19 @@ Archives are basically compressed folders which can contain multiple files. They
 
 * popular formats used by Microsoft Word (*.docx*), Excel (*.xlsx*) and PowerPoint (*.pptx*),
 * their LibreOffice equivalents (*.odt*, *.odf* and *.odp*),
-* Android applications (*.apk*).
+* applications for Android phones (*.apk*),
+* and, of course, translation packages (*.xlz*, *.mqxlz*, *.sdlppx*...).
 
-Unlike XML files, archives can't be simply viewed in your text editor. They contain compressed streams of data, which the text editor would try to directly convert into characters. The result is gibberish:
+Unlike XML files, archives can't simply be viewed in your text editor. They contain compressed streams of data, which the text editor would try to directly convert into characters. The result is gibberish:
 
 <img src="{{ site.baseurl }}/assets/blogpost1/archive_mangled_in_notepad.jpg">
 *(This is what happens if you try to open an archive in Notepad)*
 
-You can see that most of the text is mangled and unreadable. File names within the archive, which are kept as strings, are the only legible thing. My archive contained a single file, *example_file.txt*, and it is shown here, near the top.
+You can see that most of the text is mangled and unreadable. File names within the archive are the only legible thing. My archive contained a single file, *example_file.txt*, and it is shown here, in the middle of line 2.
 
-Sometimes, when browsing files in Windows Explorer, you can click on a *.zip* file and see its contents as if it were a normal folder. It is because **your operating system simply hides the complexity from you and unpacks the archive behind the scenes** (both Linux Mint and Windows 10 do it, from my experience). If you tried to actually edit the contents of the archive, you would probably encounter trouble.
+Sometimes, when browsing files in Windows Explorer or other file explorers, you can click on a *.zip* file and see its contents as if it were a normal folder. It is because **your operating system simply hides the complexity from you and unpacks the archive behind the scenes** (both Linux Mint and Windows 10 do it, from my experience). If you tried to actually open and edit the files contained in the archive, you could encounter trouble, such as broken references between documents.
 
-If you want to actually modify the files within an archive, you have to decompress it first, work on the individual files, and then re-compress the bundle again. This is also what your CAT tools do behind the scenes every time they open a package - there is no magic here.
+If you want to actually modify the files within an archive, you should decompress it first, work on the individual files, and then re-compress the bundle again. This is also what your CAT tools do behind the scenes every time they open a package - there is no magic here.
 
 In practice, archive files used by translators usually contain a bunch of XML files: bilingual files for translation, structure of the source file (or the file itself), translation memories, glossaries etc. They might also contain some other reference files.
 
@@ -131,7 +138,6 @@ Although the variety of file formats may seem daunting at first, we can see they
 4. **There are exceptions to all rules**
 
    Notice how I write *reliable software* or *valid XML*? Although the rules are universal, it is always possible to encounter something which deviates from them or is simply buggy. Don't let this discourage you from freely experimenting with file manipulation... but maybe don't experiment right before a deadline ;) Having a plan B always helps. 
-
 
 I hope this clarifies things a bit and gives you some confidence. CAT tool formats really are more accessible than they seem. Let's [apply our knowledge in real-life situations]({{ site.baseurl }}{% link _posts/2020-05-14-translation-formats-practice.markdown %})!
 

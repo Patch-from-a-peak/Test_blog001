@@ -5,6 +5,12 @@ date:   2020-05-11 13:50:25 +0200
 categories: jekyll update
 ---
 
+```
+**Note:**
+This is an outdated version of the blog, made for testing purposes.
+For the recent content, visit https://patch-from-a-peak.github.io/modern_translation_blog/
+```
+
 **Warning:** Blog post under construction, still need to add content.
 
 *This is a series of blog posts on file formats used by CAT (Computer-assisted translation) programs for storing translation data. Their aim is to share some knowledge which should allow us to tame our CAT tools better. Or to become independent from their whims.*

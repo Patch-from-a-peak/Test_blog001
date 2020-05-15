@@ -4,6 +4,12 @@ title: About
 permalink: /about/
 ---
 
+```
+**Note:**
+This is an outdated version of the blog, made for testing purposes.
+For the recent content, visit https://patch-from-a-peak.github.io/modern_translation_blog/
+```
+
 Welcome to the Modern Translation blog by R!
 
 On this blog, I will share various translation-related tricks and lifehacks I have learned over the years, mostly related to CAT tools, file formats and Python scripting. It will get technical, although I will try to make the learning curve smooth. 

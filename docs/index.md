@@ -5,3 +5,9 @@
 layout: home
 ---
 <img src="{{ site.baseurl }}/assets/blog_logo.jpg">
+
+```
+**Note:**
+This is an outdated version of the blog, made for testing purposes.
+For the recent content, visit https://patch-from-a-peak.github.io/modern_translation_blog/
+```
